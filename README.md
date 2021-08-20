@@ -23,7 +23,7 @@ Users should be able to calculate the total item by increasing or decreasing the
 
 ### Screenshot
 
-![Desktop-View](./screenshot/ss-shopping-cart-js.png)
+![Desktop View](./screenshot/ss-shopping-cart-js.png)
 
 - Solution URL: [Git Repo](https://github.com/moeen-mahmud/shopping-cart-js)
 - Live Site URL: [Live Site](https://shopping-cart-js-pi.vercel.app/)
@@ -40,7 +40,9 @@ Users should be able to calculate the total item by increasing or decreasing the
 
 ### What I learned
 
-By doing this project I revised all the things I learned about the Document Object Model. Although, I somehow encounter some confusion. But slowly I'm getting rid of those.
+By doing this project I revised all the things I learned about the Document Object Model. I added a **remove button** for each item. Although, I tried to add a **undo** button as well but it's kind of buggy. Here is the code snippet below:
+
+![Code Snippet](./screenshot/snippet-remove-button.png)
 
 ### Continued Development
 
