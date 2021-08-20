@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Food</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-section mt-8 px-8 text-center">
+        <h1 class="my-3 text-5xl text-gray-800 font-bold">Order Your Food!</h1>
+        <p class="text-xl text-yellow-500 font-medium">
+          Order delicious food with us and make yourself happy 😃
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <!-- <p
+          id="undo-btn"
+          title="Undo the removed item!"
+          class="mx-8 text-right underline cursor-pointer"
+        >
+          Undo
+        </p> -->
+        <section class="product-area p-8 mt-4 mb-2">
+          <!-- Chicken Momo -->
+          <div
+            id="food-momo"
+            class="
+              chicken-momo
+              mb-8
+              py-8
+              shadow-lg
+              flex
+              justify-around
+              items-center
+            "
+          >
+            <div class="food-image w-1/6">
+              <img
+                src="./images/chicken-momo.jpg"
+                alt="Chicken Momo"
+                class="block rounded"
+              />
+            </div>
+            <div class="food-info w-1/6">
+              <h2 class="text-xl text-gray-800 font-bold text-center">
+                Spicy Chicken Momo
+              </h2>
+            </div>
+            <div class="food-qty">
+              <button id="btn-minus-momo" class="btn-minus p-2 text-gray-800">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input
+                type="number"
+                min="0"
+                name="price"
+                id="input-value-momo"
+                value="1"
+                class="input-value text-center w-10 text-gray-800 font-bold"
+              />
+              <button id="btn-plus-momo" class="btn-plus p-2 text-gray-800">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="food-price">
+              <h3 class="text-center text-xl text-gray-800 font-bold">
+                <span id="momo-price">59 </span>$
+              </h3>
+            </div>
+            <div class="remove-food">
+              <button id="remove-btn-momo" class="remove-btn p-2 text-gray-800">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Ramen Noodles -->
+          <div
+            id="food-ramen"
+            class="
+              ramen-noodles
+              mb-8
+              py-8
+              shadow-lg
+              flex
+              justify-around
+              items-center
+            "
+          >
+            <div class="food-image w-1/6">
+              <img
+                src="./images/ramen-noodles.jpg"
+                alt="Ramen Noodles"
+                class="block rounded"
+              />
+            </div>
+            <div class="food-info w-1/6">
+              <h2 class="text-xl text-gray-800 font-bold text-center">
+                Ramen Noodles
+              </h2>
+            </div>
+            <div class="food-qty">
+              <button id="btn-minus-ramen" class="btn-minus p-2 text-gray-800">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input
+                type="number"
+                min="0"
+                name="price"
+                id="input-value-ramen"
+                value="1"
+                class="text-center w-10 text-gray-800 font-bold"
+              />
+              <button id="btn-plus-ramen" class="btn-plus p-2 text-gray-800">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="food-price">
+              <h3 class="text-center text-xl text-gray-800 font-bold">
+                <span id="ramen-price">79 </span>$
+              </h3>
+            </div>
+            <div class="remove-food">
+              <button
+                id="remove-btn-ramen"
+                class="remove-btn p-2 text-gray-800"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Vegan Salad -->
+          <div
+            id="food-salad"
+            class="
+              vegan-salad
+              my-4
+              py-8
+              shadow-lg
+              flex
+              justify-around
+              items-center
+            "
+          >
+            <div class="food-image w-1/6">
+              <img
+                src="./images/vegan-salad.jpg"
+                alt="Chicken Momo"
+                class="block rounded"
+              />
+            </div>
+            <div class="food-info w-1/6">
+              <h2 class="text-xl text-gray-800 font-bold text-center">
+                Seasoned Vegan Salad
+              </h2>
+            </div>
+            <div class="food-qty">
+              <button id="btn-minus-salad" class="btn-minus p-2 text-gray-800">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input
+                type="number"
+                min="0"
+                name="price"
+                id="input-value-salad"
+                value="1"
+                class="text-center w-10 text-gray-800 font-bold"
+              />
+              <button id="btn-plus-salad" class="btn-plus p-2 text-gray-800">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="food-price">
+              <h3 class="text-center text-xl text-gray-800 font-bold">
+                <span id="salad-price">29 </span>$
+              </h3>
+            </div>
+            <div class="remove-food">
+              <button
+                id="remove-btn-salad"
+                class="remove-btn p-2 text-gray-800"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="checkout-area p-4 mb-8">
+          <div class="total-area flex justify-around items-center my-4">
+            <h3 class="text-2xl font-bold text-gray-800 w-40">Total</h3>
+            <h3 class="text-2xl font-bold text-gray-800">
+              <span id="total-price">167</span>$
+            </h3>
+          </div>
+          <div class="vat-area flex justify-around items-center mt-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-800 w-40">VAT (10%)</h3>
+            <h3 class="text-2xl font-bold text-gray-800">
+              <span id="total-vat">0</span>$
+            </h3>
+          </div>
+          <div class="h-1 w-3/4 rounded bg-gray-800 mx-auto"></div>
+          <div class="total-area flex justify-around items-center mt-4">
+            <h3 class="text-2xl font-bold text-gray-800 w-40">Grand Total</h3>
+            <h3 class="text-3xl font-bold text-gray-800">
+              <span id="grand-total">167</span>$
+            </h3>
+          </div>
+          <div class="m-8 text-center">
+            <button
+              id="checkout-btn"
+              class="
+                py-4
+                px-8
+                text-xl
+                font-bold
+                text-gray-800
+                bg-yellow-400
+                rounded
+              "
+            >
+              Checkout <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Javascript Source -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
