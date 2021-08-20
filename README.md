@@ -23,7 +23,7 @@ Users should be able to calculate the total item by increasing or decreasing the
 
 ### Screenshot
 
-![Desktop View](./screenshot/ss-shopping-cart-js.png)
+![Desktop View](./screenshot/shopping-cart-js.png)
 
 - Solution URL: [Git Repo](https://github.com/moeen-mahmud/shopping-cart-js)
 - Live Site URL: [Live Site](https://shopping-cart-js-pi.vercel.app/)
