@@ -102,4 +102,3 @@ document
   .addEventListener("click", function () {
     document.getElementById("food-salad").style.visibility = "hidden";
   });
-
