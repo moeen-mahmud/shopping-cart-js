@@ -1,3 +1,7 @@
+/**
+ * I've added this comment for checking git lens
+ */
+
 // Main Function
 
 function foodCounter(food, price, isAdding) {
